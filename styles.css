@@ -1,0 +1,56 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100i,300,400,400i,700,700i&subset=cyrillic,cyrillic-ext');
+
+form {
+  margin-top: 35vh;
+  text-align: center;
+  transform: translateY(-70%);
+}
+
+input {
+  caret-color: rgb(255, 0, 0);
+  padding-bottom: 0.25em;
+  font-family: 'Roboto Mono', monospace;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 6vw;
+  font-weight: 900;
+  text-align: center;
+  transition: border-bottom 300ms ease;
+}
+
+input:disabled {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+input::after {
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+}
+
+ul {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  font-size: 3vw;
+  list-style: none;
+  text-decoration: line-through;
+  line-height: 2;
+  opacity: 0.25;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition-property: width;
+  transition-timing-function: ease;
+
+}
