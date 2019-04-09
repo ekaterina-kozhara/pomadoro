@@ -1,7 +1,7 @@
 const form = document.querySelector('form')
 const tasks = document.querySelector('ul')
 const progress = document.querySelector('.progress')
-const WORK_TIME = 2000
+const WORK_TIME = 150000
 
 function startTimer(e) {
   e.preventDefault()
@@ -33,7 +33,7 @@ function startTimer(e) {
 function loadHistory() {
   const historySize = localStorage.length
   if (historySize > 0) {
-    for (let i = 0; i < historySize; i++) {      
+    for (let i = 0; i < historySize; i++) {
       const key = localStorage.key(i)
       const taskName = localStorage.getItem(key)
       const listItem = document.createElement('li')
