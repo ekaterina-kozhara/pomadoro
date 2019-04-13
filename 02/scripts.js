@@ -1,6 +1,9 @@
 const form = document.querySelector('form')
 
-form.onsubmit =function startTimer(event) {
+form.onsubmit =function startTimer(e) {
   event.preventDefault()
-  console.log(666)
+
+  const input = e.target.querySelector('input[type=text]')
+
+  console.log(input.value)
 }
