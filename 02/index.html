@@ -13,7 +13,7 @@
           <a class="is-active" href="#timer-section">Таймер</a>
         </li>
         <li>
-          <a href="#stats-section">Статистика</a>
+          <a id="statisticToggle" href="#stats-section">Статистика</a>
         </li>
       </ul>
     </nav>
@@ -28,20 +28,46 @@
             placeholder="Например, хочу написать первый пункт плана по захвату мира"
           >
           <label for="">Сколько хотите потратить времени</label>
-          <button class="button" type="button">25 мин</button>
-          <button class="button" type="button">5 мин</button>
-          <button class="button" type="button">1 мин</button>
+          <div class="switcher">
+            <a class="switch is-left is-active" href="#">25 минут</a>
+            <a class="switch is-right" href="#">1 минута</a>
+          </div>
           <input class="button" type="submit" value="Запустить">
         </form>
-
-
       </section>
       <section id="stats-section">
+        <p class="stats-section">Завершенные задачи</p>
+        <table>
+          <tr>
+            <th>Дата</th>
+            <th>Таймер</th>
+            <th>Задача</th>
+          </tr>
+          <tr>
+            <td>13 апреля</td>
+            <td>25 минут</td>
+            <td>Хочу подобрать шрифты для планировщика</td>
+            <td><img src="images/x.svg" alt="крестик"></td>
+          </tr>
+          <tr>
+            <td>13 апреля</td>
+            <td>25 минут</td>
+            <td>Хочу подобрать шрифты для планировщика</td>
+            <td><img src="images/x.svg" alt="крестик"></td>
+          </tr>
+          <tr>
+            <td>12 апреля</td>
+            <td>5 минут</td>
+            <td>Перерыв</td>
+            <td><img src="images/x.svg" alt="крестик"></td>
+          </tr>
+        </table>
       </section>
       <section id="progress-section">
       </section>
       <footer>
         <img class="clock-bottom" src="images/clock.svg" alt="картинка секции">
+        <!-- <img class="to-do-list" src="images/todolist.svg" alt="картинка секции"> -->
       </footer>
     </main>
     <script src="scripts.js"></script>
